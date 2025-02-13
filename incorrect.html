@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Prioritization Lab</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https:\\ajax.googleapis.com\ajax\libs\jquery\2.1.1\jquery.min.js"></script>
+	<script type="text/javascript">
+	var pics = [
+		"https://i.pinimg.com/originals/aa/36/e4/aa36e46bdfaa5550bb1bcb5427578456.gif",
+		"https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY20wbTZ5bW5vdGxjc203a3hrbGJjaGV1dXh0OWNtdTB3Y2tidnFxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KflVsaTAmNoNQiu9Kj/giphy.gif",
+		"https://i.makeagif.com/media/12-11-2017/ectAlv.gif",
+		"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjU1bGRubWZxcTh4dWUxazB3a3IxbWJvOGkxd2dxeGpscmN6aGh1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yOtFpMDqSC8DwjVSo3/giphy.gif",
+		"https://media1.tenor.com/m/4E1HQ44uuFUAAAAC/ken-kenough.gif",
+		"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2E0NmRkM3d0Ym83ZnZha2FtZHg0c3VuMXVyeGxyZW1hb2lsbG03cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j2PD2ZmCjSDzs8wUwL/giphy.gif"
+		];
+	function picrandom() {
+		var index = Math.floor(Math.random() * pics.length);
+		pic = pics[index];
+		document.getElementById('pic').src = pic
+		console.log(pic);
+	}	
+	</script>
+	
+	</head>
+	<body onload="picrandom()">
+		<div class="Banner">
+			Prioritization
+		</div>
+		<div id="body">
+			<h1>You are incorrect</h1>
+			<p><img id="pic" width="350px" height="350px"></img></p>
+		</div>
+		
+	</body>
+
+
+
+
+
+
+</html>

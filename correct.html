@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Prioritization Lab</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https:\\ajax.googleapis.com\ajax\libs\jquery\2.1.1\jquery.min.js"></script>
+	<script type="text/javascript">
+		var pics = [
+		"https://i.makeagif.com/media/7-01-2021/OKCfa8.gif",
+		"https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZ5ZWJtbGNiNHRsajRjMTU3NjFmeHA5dmF4aWdqbjB0aXc4Y2ZoNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7bumBQjZX8BgaE2zjv/giphy.gif",
+		"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTI0ODk1M2tib2JtdHpyNmgwZHp1Z2ZjYTM0czV5eWN1NWo3bTExMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZBVhKIDgts1eHYdT7u/giphy.gif",
+		"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTQ0MnZybnY1bXJsbHZxdXJpcGM1eXIzOTJ0dmc3MHFianN2c2ZlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TZKwh07fO53dA05Xmy/giphy.gif",
+		"https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHh2b2F0YWxnbnBjdWV1ZnJsb3VlNnpmNXh6M2pjYTg2cnQzaDFhbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrI0hnj4jGpPa5LLHT/giphy.gif",
+		"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZscWY2NTZ2M3l4Y3JxNWxoczZvMXlwMmFlOHJxdGlqODA3eDF4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iLYKIP1xhLWDndQj9h/giphy.gif",
+		"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJ5eDhocHZsZjBqcDZ1YW96OW5ld3g4MTE5NHhxZzdhcWlobndyaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2wSe48eAUC15p38UqO/giphy.gif"];
+	function picrandom() {
+		var index = Math.floor(Math.random() * pics.length);
+		pic = pics[index];
+		document.getElementById('pic').src = pic
+		console.log(pic);
+	}
+	</script>
+	
+	</head>
+	<body onload="picrandom()">
+		<div class="Banner">
+			Prioritization
+		</div>
+		<div id="body">
+			<h1>You are correct</h1>
+			<h2>Collect 100 gold coins</h2>
+			<p><img id="pic" width="350px" height="350px"></img></p>
+		</div>
+		
+	</body>
+
+
+
+
+
+
+</html>
